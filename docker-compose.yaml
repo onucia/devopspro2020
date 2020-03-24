@@ -1,0 +1,14 @@
+---
+version: '3.2'
+services:
+  nginx:
+    build: nginx
+    image: onucia/devopspro2020:${VERSION}
+    ports:
+      - 80:80
+    volumes:
+      - ./html:/var/www/html
+  php:
+    image: php:7.4-fpm
+    volumes:
+      - ./html:/var/www/html

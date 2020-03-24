@@ -1,0 +1,7 @@
+---
+version: '3.2'
+services:
+  nginx:
+    image: janoszen/devopspro2020
+    ports:
+      - 80:80
